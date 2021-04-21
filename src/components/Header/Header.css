@@ -1,7 +1,7 @@
 .header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     border-bottom: 1px solid whitesmoke;
 }
 
@@ -12,4 +12,10 @@
 .header__right{
     display: flex;
     padding-right: 20px;
+    margin-left: auto;
+}
+
+.header__middle{
+    margin-left: 20px;
+    margin-top: 15px;
 }

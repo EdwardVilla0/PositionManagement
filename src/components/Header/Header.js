@@ -1,6 +1,7 @@
 import { Avatar, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu'
 import React from 'react';
+import Employees from '../Employees/Employees';
 import './Header.css';
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
                 </IconButton>
             </div>
             <div className="header__middle">
-
+                <Employees />
             </div>
             <div className="header__right">
                 <IconButton >
