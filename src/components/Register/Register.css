@@ -1,0 +1,37 @@
+.register{
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.register > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register > form > input{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.register > form > button{
+    width: 365px;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    background-color: #0074b1;
+    border-radius: 5px;
+}
+
+
+.register > p{
+    margin-top: 20px;
+}
