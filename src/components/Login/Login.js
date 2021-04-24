@@ -4,6 +4,7 @@ import { auth } from '../../firebase';
 import { useDispatch } from 'react-redux';
 import './Login.css';
 import { login } from '../../features/userSlice';
+import { Link, BrowserRouter as Router } from 'react-router-dom'
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -39,7 +40,10 @@ function Login() {
 
             <p>Not a member?
                 {/* <span className="login__register" onClick={register}> Register Now</span> */}
-                <span className="login__register" > Register Now</span>
+
+
+
+
             </p>
 
         </div>

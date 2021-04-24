@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
@@ -31,19 +31,24 @@ function App() {
 
   return (
     <Router>
+      <Link className="login__register" to="/register">Register Now</Link>
 
       {!user ? (
         <Login />
-        // <Register />
+
+
       ) : (
         <div className="app">
 
 
           <Switch>
+
+            <Route path="/register" exact>
+              <Register />
+            </Route>
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route />
           </Switch>
 
 
