@@ -3,7 +3,7 @@
     place-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
 }
 
@@ -37,10 +37,7 @@
     border-radius: 5px;
 }
 
-.login__register{
-    color: #0177b7;
-    cursor: pointer;
-}
+
 
 .login > p{
     margin-top: 20px;

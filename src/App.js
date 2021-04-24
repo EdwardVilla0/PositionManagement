@@ -11,8 +11,8 @@ function App() {
     <Router>
 
       {!x ? (
-        // <Login />
-        <Register />
+        <Login />
+        // <Register />
       ) : (
         <div className="app">
 

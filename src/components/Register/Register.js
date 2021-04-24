@@ -17,7 +17,7 @@ function Register() {
         e.preventDefault();
         console.log("testing")
         if (!firstName || !lastName) {
-            return alert("You must enter a full name!")
+            return alert("You must enter a name!")
         }
 
         auth.createUserWithEmailAndPassword(email, password)
@@ -44,7 +44,6 @@ function Register() {
                 <input value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" type="email" required />
                 <input value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" type="password" required />
                 <input value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="Confirm Password" type="password" required />
-                {/* <button type="submit" onClick={loginToApp}>Sign In</button> */}
                 <button type="submit" onClick={registerToApp}>Sign In</button>
             </form>
         </div>
