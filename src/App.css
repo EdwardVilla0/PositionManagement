@@ -1,1 +1,10 @@
+.app{
+    display: flex;
+    justify-content: center;
+}
 
+.register__member{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}

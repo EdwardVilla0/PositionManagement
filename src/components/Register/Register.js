@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { auth } from '../../firebase';
 import { login } from '../../features/userSlice'
 import './Register.css'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Register() {
     const [email, setEmail] = useState("");
@@ -46,6 +47,12 @@ function Register() {
                 <input value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="Confirm Password" type="password" required />
                 <button type="submit" onClick={registerToApp}>Sign In</button>
             </form>
+
+            <p className="register__backToLogin">Back to
+                <Router>
+                    <Link className="login__register" to="/login"> login?</Link>
+                </Router>
+            </p>
         </div>
     )
 }

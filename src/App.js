@@ -24,33 +24,32 @@ function App() {
         dispatch(logout());
       }
     })
-
-
   }, [])
 
 
   return (
     <Router>
-      <Link className="login__register" to="/register">Register Now</Link>
-
       {!user ? (
-        <Login />
+        <>
 
-
-      ) : (
-        <div className="app">
 
 
           <Switch>
+            <Route exact path="/login" component={Login} />
+            {/* <Login path="/login" /> */}
 
-            <Route path="/register" exact>
-              <Register />
-            </Route>
+            <Route exact path="/register" component={Register} />
+
+          </Switch>
+
+        </>
+      ) : (
+        <div className="app">
+          <Switch>
             <Route path="/" exact>
               <Home />
             </Route>
           </Switch>
-
 
         </div>
       )}
