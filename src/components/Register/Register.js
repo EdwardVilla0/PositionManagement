@@ -13,7 +13,12 @@ function Register() {
     const [lastName, setLastName] = useState("");
     const dispatch = useDispatch();
 
-
+    function refreshPage() {
+        setTimeout(() => {
+            window.location.reload(false);
+        }, 500);
+        console.log('page to reload')
+    }
     const registerToApp = (e) => {
         e.preventDefault();
         console.log("testing")
@@ -50,7 +55,7 @@ function Register() {
 
             <p className="register__backToLogin">Back to
                 <Router>
-                    <Link className="login__register" to="/login"> login?</Link>
+                    <Link className="login__register" to={{ pathname: "/" }} onClick={refreshPage}> login?</Link>
                 </Router>
             </p>
         </div>

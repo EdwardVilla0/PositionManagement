@@ -11,6 +11,12 @@ function Login() {
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
 
+    function refreshPage() {
+        setTimeout(() => {
+            window.location.reload(false);
+        }, 500);
+        console.log('page to reload')
+    }
 
     const loginToApp = (e) => {
         e.preventDefault();
@@ -40,7 +46,7 @@ function Login() {
 
             <p className="register__member">Not a member?
                 <Router>
-                    <Link className="login__register" to="/register">Register Now</Link>
+                    <Link className="login__register" to={{ pathname: "/register" }} onClick={refreshPage}>Register Now</Link>
                 </Router>
             </p>
 
