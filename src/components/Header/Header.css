@@ -1,6 +1,8 @@
 .header{
     display: flex;
     border-bottom: 1px solid whitesmoke;
+   
+    justify-content: space-between;
 }
 
 .header__left{
@@ -9,12 +11,10 @@
 
 .header__right{
     display: flex;
-    padding-right: 20px;
-    margin-left: auto;
+    justify-content: flex-end;
 }
 
 .header__middle{
     display: flex;
-    margin-left: 50px;
-    
+    margin: 10px 80px;
 }

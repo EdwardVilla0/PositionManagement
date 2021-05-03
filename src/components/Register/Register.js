@@ -19,6 +19,7 @@ function Register() {
         }, 500);
         console.log('page to reload')
     }
+
     const registerToApp = (e) => {
         e.preventDefault();
         console.log("testing")

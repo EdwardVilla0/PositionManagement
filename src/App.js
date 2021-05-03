@@ -33,14 +33,16 @@ function App() {
         <>
 
 
+          <div className="app">
+            <Switch>
+              <Route exact path="/" component={Login} />
+              {/* <Login path="/login" /> */}
 
-          <Switch>
-            <Route exact path="/" component={Login} />
-            {/* <Login path="/login" /> */}
+              <Route exact path="/register" component={Register} />
 
-            <Route exact path="/register" component={Register} />
+            </Switch>
+          </div>
 
-          </Switch>
 
         </>
       ) : (
