@@ -19,6 +19,10 @@ function Header() {
         dispatch(logout())
         auth.signOut()
     }
+
+    const showEmployeesPage = (e) => {
+        console.log("testing e")
+    }
     return (
         <div className="header">
             <div className="header__left">
@@ -27,7 +31,7 @@ function Header() {
                 </IconButton>
             </div>
             <div className="header__middle">
-                <Button>Employees</Button>
+                <Button onClick={showEmployeesPage}>Employees</Button>
                 <Button>PositionControl</Button>
                 <Button>Timesheets</Button>
                 <Button>Accounts</Button>

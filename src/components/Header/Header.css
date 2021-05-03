@@ -1,20 +1,24 @@
 .header{
     display: flex;
     border-bottom: 1px solid whitesmoke;
-   
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header__left{
-    /* display: flex; */
+    display: flex;
 }
 
 .header__right{
-    /* display: flex;
-    justify-content: flex-end; */
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header__middle{
     display: flex;
-    margin: 10px 80px;
+    margin: 10px 50px;
+    justify-content: space-evenly;
+}
+
+.header__middle > Button{
+    margin: 0 15px;
 }
