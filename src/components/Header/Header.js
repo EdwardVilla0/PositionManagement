@@ -1,4 +1,4 @@
-import { Avatar, IconButton } from '@material-ui/core';
+import { Avatar, Button, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu'
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -27,12 +27,13 @@ function Header() {
                 </IconButton>
             </div>
             <div className="header__middle">
-                <Employees />
-                <PositionControl />
-                <Timesheets />
-                <Accounts />
-                <Benefits />
-                <Miscellaneous />
+                <Button>Employees</Button>
+                <Button>PositionControl</Button>
+                <Button>Timesheets</Button>
+                <Button>Accounts</Button>
+                <Button>Benefits</Button>
+                <Button>Miscellaneous</Button>
+
             </div>
             <div className="header__right">
                 <IconButton onClick={logoutOfApp}>
