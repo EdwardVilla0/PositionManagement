@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core'
 import React from 'react'
+import Header from '../Header/Header'
 import './Employees.css'
 
 function Employees() {
@@ -10,7 +11,7 @@ function Employees() {
 
     return (
         <div className="employees">
-            <Button onClick={showEmployeesPage}>Employees</Button>
+            <Header />
 
         </div>
     )

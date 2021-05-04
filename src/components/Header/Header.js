@@ -10,6 +10,8 @@ import Employees from '../Employees/Employees';
 import Miscellaneous from '../Miscellaneous/Miscellaneous';
 import PositionControl from '../PositionControl/PositionControl';
 import Timesheets from '../Timesheets/Timesheets';
+import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
+
 import './Header.css';
 
 function Header() {
@@ -20,9 +22,11 @@ function Header() {
         auth.signOut()
     }
 
-    const showEmployeesPage = (e) => {
-        console.log("testing e")
-    }
+    const history = useHistory();
+    const toHome = () => history.push('/');
+    const toEmployees = () => history.push('/employees');
+
+
     return (
         <div className="header">
             <div className="header__left">
@@ -31,7 +35,8 @@ function Header() {
                 </IconButton>
             </div>
             <div className="header__middle">
-                <Button onClick={showEmployeesPage}>Employees</Button>
+                <Button onClick={toHome}>Home</Button>
+                <Button onClick={toEmployees}>Employees</Button>
                 <Button>PositionControl</Button>
                 <Button>Timesheets</Button>
                 <Button>Accounts</Button>
