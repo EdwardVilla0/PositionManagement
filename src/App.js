@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Employees from './components/Employees/Employees';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
@@ -48,14 +50,17 @@ function App() {
         </>
       ) : (
         <div className="app">
+          <Header />
           <Switch>
             <Route path="/" exact>
+
               <Home />
             </Route>
             <Route path="/employees" exact>
               <Employees />
             </Route>
           </Switch>
+          <Footer />
 
         </div>
       )}

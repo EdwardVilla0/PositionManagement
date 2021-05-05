@@ -1,18 +1,14 @@
 import { Button } from '@material-ui/core'
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './Employees.css'
 
 function Employees() {
 
-    const showEmployeesPage = (e) => {
-        console.log("testing e")
-    }
-
     return (
         <div className="employees">
-            <Header />
-
+            <h1>testing employees</h1>
         </div>
     )
 }
