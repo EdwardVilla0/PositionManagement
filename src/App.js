@@ -57,27 +57,13 @@ function App() {
         <div className="app">
           <Header />
           <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/employees" exact>
-              <Employees />
-            </Route>
-            <Route paht='/positioncontrol'>
-              <PositionControl />
-            </Route>
-            <Route paht='/timesheets'>
-              <Timesheets />
-            </Route>
-            <Route paht='/accounts'>
-              <Accounts />
-            </Route>
-            <Route paht='/benefits'>
-              <Benefits />
-            </Route>
-            <Route paht='/miscellaneous'>
-              <Miscellaneous />
-            </Route>
+            <Route path="/" exact><Home /></Route>
+            <Route path="/employees" exact><Employees /></Route>
+            <Route paht='/positioncontrol'><PositionControl /></Route>
+            <Route paht='/timesheets'><Timesheets /></Route>
+            <Route paht='/accounts'><Accounts /></Route>
+            <Route paht='/benefits'><Benefits /></Route>
+            <Route paht='/miscellaneous'><Miscellaneous /></Route>
           </Switch>
           <Footer />
 

@@ -25,6 +25,11 @@ function Header() {
     const history = useHistory();
     const toHome = () => history.push('/');
     const toEmployees = () => history.push('/employees');
+    const toPositionControl = () => history.push('/positioncontrol');
+    const toTimesheets = () => history.push('/timesheets');
+    const toAccounts = () => history.push('/accounts');
+    const toBenefits = () => history.push('/benefits');
+    const toMiscellaneous = () => history.push('/miscellaneous');
 
 
     return (
@@ -37,11 +42,11 @@ function Header() {
             <div className="header__middle">
                 <Button onClick={toHome}>Home</Button>
                 <Button onClick={toEmployees}>Employees</Button>
-                <Button>PositionControl</Button>
-                <Button>Timesheets</Button>
-                <Button>Accounts</Button>
-                <Button>Benefits</Button>
-                <Button>Miscellaneous</Button>
+                <Button onClick={toPositionControl}>PositionControl</Button>
+                <Button onClick={toTimesheets}>Timesheets</Button>
+                <Button onClick={toAccounts}>Accounts</Button>
+                <Button onClick={toBenefits}>Benefits</Button>
+                <Button onClick={toMiscellaneous}>Miscellaneous</Button>
 
             </div>
             <div className="header__right">

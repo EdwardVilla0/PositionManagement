@@ -5,7 +5,6 @@ import './PositionControl.css';
 function PositionControl() {
     return (
         <div className="positionControl">
-            <Button>Position Control</Button>
         </div>
     )
 }
