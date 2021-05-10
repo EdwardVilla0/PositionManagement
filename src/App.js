@@ -32,7 +32,7 @@ function App() {
         dispatch(logout());
       }
     })
-  }, [])
+  })
 
 
   return (

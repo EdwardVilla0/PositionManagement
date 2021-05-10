@@ -1,19 +1,27 @@
-import { Button } from '@material-ui/core'
 import React from 'react'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
 import './Employees.css'
 
 function Employees() {
+    const myObj = {
+        id: 1,
+        firstName: 'John',
+        lastName: 'Doe',
+        sickTime: 10,
+        personalTime: 10,
+        vacationTime: 8
 
+    };
 
     return (
         <div className="employees">
-            <div className="employess__left">
-                <h2>testing </h2>
+            <div className="employees__left">
+                <h3>testing</h3>
+                <h3>testing</h3>
+
             </div>
             <div className="employees__right">
-                <h2>testing asdf</h2>
+                <p>First Name</p>
+                <input placeholder={myObj.firstName} />
             </div>
         </div>
     )

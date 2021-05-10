@@ -4,13 +4,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, selectUser } from '../../features/userSlice';
 import { auth } from '../../firebase';
-import Accounts from '../Accounts/Accounts';
-import Benefits from '../Benefits/Benefits';
-import Employees from '../Employees/Employees';
-import Miscellaneous from '../Miscellaneous/Miscellaneous';
-import PositionControl from '../PositionControl/PositionControl';
-import Timesheets from '../Timesheets/Timesheets';
-import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
+
+import { useHistory } from "react-router-dom";
 
 import './Header.css';
 

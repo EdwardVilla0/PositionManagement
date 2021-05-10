@@ -4,7 +4,7 @@ import { auth } from '../../firebase';
 import { useDispatch } from 'react-redux';
 import './Login.css';
 import { login } from '../../features/userSlice';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Login() {
     const [email, setEmail] = useState("");
