@@ -20,8 +20,14 @@ function Employees() {
 
             </div>
             <div className="employees__right">
-                <p>First Name</p>
-                <input placeholder={myObj.firstName} />
+                <p>First name</p>
+                <input placeholder="First name" />
+                <p>Middle name</p>
+                <input placeholder="Middle Name" />
+                <p>Last name</p>
+                <input placeholder="Last name" />
+                <p>Address</p>
+                <input placeholder="Address" />
             </div>
         </div>
     )
