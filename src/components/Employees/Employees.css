@@ -1,3 +1,13 @@
 .employees{
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.employees__left{
+    flex: 0.3;
+}
+
+.employees__right{
+    flex: 0.7;
 }

@@ -9,7 +9,12 @@ function Employees() {
 
     return (
         <div className="employees">
-            <h1>testing employees</h1>
+            <div className="employess__left">
+                <h2>testing </h2>
+            </div>
+            <div className="employees__right">
+                <h2>testing asdf</h2>
+            </div>
         </div>
     )
 }
