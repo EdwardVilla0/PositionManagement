@@ -15,19 +15,19 @@ function Employees() {
     return (
         <div className="employees">
             <div className="employees__left">
-                <h3>testing</h3>
-                <h3>testing</h3>
+                <h3>testing </h3>
+                <h3> testing</h3>
 
             </div>
             <div className="employees__right">
-                <p>First name</p>
-                <input placeholder="First name" />
-                <p>Middle name</p>
-                <input placeholder="Middle Name" />
-                <p>Last name</p>
-                <input placeholder="Last name" />
-                <p>Address</p>
-                <input placeholder="Address" />
+                <div class="item">
+                    <p>Name</p>
+                    <div class="name-item">
+                        <input type="text" name="name" placeholder="First" />
+                        <input type="text" name="name" placeholder="Last" />
+                    </div>
+                </div>
+
             </div>
         </div>
     )

@@ -13,6 +13,18 @@
 
 .employees__right{
     flex: 0.7;
-    display: flex;
-    flex-wrap: wrap;
+   
+    
 }
+.item {
+    position: relative;
+    margin: 10px 0;
+    }
+
+.item input:hover, .item select:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 #095484;
+    color: #095484;
+    }
+
+    
