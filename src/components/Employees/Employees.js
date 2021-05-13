@@ -20,13 +20,43 @@ function Employees() {
 
             </div>
             <div className="employees__right">
-                <div class="item">
+                <div className="item">
                     <p>Name</p>
-                    <div class="name-item">
+                    <div className="name-item">
                         <input type="text" name="name" placeholder="First" />
+                        <input type="text" name="name" placeholder="Middle" />
                         <input type="text" name="name" placeholder="Last" />
                     </div>
                 </div>
+
+                <div className="item">
+                    <p>Name</p>
+                    <div className="name-item">
+                        <input type="text" name="name" placeholder="First" />
+                        <input type="text" name="name" placeholder="Middle" />
+                        <input type="text" name="name" placeholder="Last" />
+                    </div>
+                </div>
+                <div class="item">
+                    <p>Address</p>
+                    <input type="text" name="name" placeholder="Street address" />
+                    <input type="text" name="name" placeholder="Street address line 2" />
+                    <div class="city-item">
+                        <input type="text" name="name" placeholder="City" />
+                        <input type="text" name="name" placeholder="Region" />
+                        <input type="text" name="name" placeholder="Postal / Zip code" />
+                        <select>
+                            <option value="">Country</option>
+                            <option value="1">Russia</option>
+                            <option value="2">Germany</option>
+                            <option value="3">France</option>
+                            <option value="4">Armenia</option>
+                            <option value="5">USA</option>
+                        </select>
+                    </div>
+                </div>
+
+
 
             </div>
         </div>
