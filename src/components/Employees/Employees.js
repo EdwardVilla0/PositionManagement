@@ -37,11 +37,10 @@ function Employees() {
                         <input type="text" name="name" placeholder="Last" />
                     </div>
                 </div>
-                <div class="item">
+                <div className="item">
                     <p>Address</p>
-                    <input type="text" name="name" placeholder="Street address" />
-                    <input type="text" name="name" placeholder="Street address line 2" />
-                    <div class="city-item">
+                    <div className="city-item">
+                        <input type="text" name="name" placeholder="Street Address" />
                         <input type="text" name="name" placeholder="City" />
                         <input type="text" name="name" placeholder="Region" />
                         <input type="text" name="name" placeholder="Postal / Zip code" />

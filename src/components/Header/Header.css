@@ -15,10 +15,10 @@
 
 .header__middle{
     display: flex;
-    margin: 10px 50px;
+    margin: 10px 0;
     justify-content: space-evenly;
 }
 
 .header__middle > Button{
-    margin: 0 15px;
+    margin: 0 10px;
 }
