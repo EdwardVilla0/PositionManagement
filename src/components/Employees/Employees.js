@@ -23,9 +23,9 @@ function Employees() {
                 <div className="item">
                     <p>Name</p>
                     <div className="name-item">
-                        <input type="text" name="name" placeholder="First" />
+                        <input type="text" name="name" placeholder="First" required />
                         <input type="text" name="name" placeholder="Middle" />
-                        <input type="text" name="name" placeholder="Last" />
+                        <input type="text" name="name" placeholder="Last" required />
                     </div>
                 </div>
 
