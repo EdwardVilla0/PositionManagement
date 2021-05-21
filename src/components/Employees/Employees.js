@@ -15,8 +15,18 @@ function Employees() {
     return (
         <div className="employees">
             <div className="employees__left">
-                <h3>testing </h3>
-                <h3> testing</h3>
+                <label>Search Employees</label>
+                <input type="text" name="name" placeholder="Enter name" required />
+                <ul>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                    <li>testing</li>
+                </ul>
 
             </div>
             <div className="employees__right">
@@ -29,14 +39,6 @@ function Employees() {
                     </div>
                 </div>
 
-                <div className="item">
-                    <p>Name</p>
-                    <div className="name-item">
-                        <input type="text" name="name" placeholder="First" />
-                        <input type="text" name="name" placeholder="Middle" />
-                        <input type="text" name="name" placeholder="Last" />
-                    </div>
-                </div>
                 <div className="item">
                     <p>Address</p>
                     <div className="city-item">
