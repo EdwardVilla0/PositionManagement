@@ -1,17 +1,17 @@
 .employees{
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
-
+    height: 100%;
 }
 
 .employees__left{
     flex: 0.2;
-    display: flex;
     margin-right: 50px;
-    height: 100%;
     flex-direction: column;
+}
+
+.employees__leftSearch{
+    
 }
 
 .employees__left > input {
